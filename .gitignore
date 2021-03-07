@@ -1,2 +1,5 @@
 #remove local history
 .history
+
+#remove three js folder with content
+three.js-master

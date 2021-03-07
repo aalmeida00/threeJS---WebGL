@@ -1,1 +1,1 @@
-console.log('Hello Three JS');
+const scene = new THREE.Scene();
