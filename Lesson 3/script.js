@@ -15,6 +15,11 @@ const sizes = {
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); // First parameter: Field of View on Vertical
+// To move a object we need to move with x, y and z position
+// y = up x = horizontal z = our position
+camera.position.z = 3;
+camera.position.y = 1;
+camera.position.x = -1;
 
 scene.add(camera); // Add Camera to Scene
 
@@ -25,6 +30,7 @@ const render = new THREE.WebGLRenderer({
   canvas: canvas,
 });
 
+// Set size of render
 render.setSize(sizes.width, sizes.height);
 
 render.render(scene, camera);
