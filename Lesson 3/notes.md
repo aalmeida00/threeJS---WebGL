@@ -10,3 +10,7 @@ Objects can be many things, primitive geometries, imported models, particles, li
 # Mesh (https://threejs.org/docs/index.html#api/en/materials/MeshBasicMaterial)
 
 - Mesh is a combination of components to create a shape with material
+
+# Camera (https://threejs.org/docs/index.html#api/en/cameras/PerspectiveCamera)
+
+- You have to provide the camera position, POV. Have many cameras on the scene, with differente types
