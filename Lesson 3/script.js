@@ -7,6 +7,24 @@ const material = new THREE.MeshBasicMaterial({ color: 'red' }); //U need to prov
 const mesh = new THREE.Mesh(geometry, material); // Mesh is a compose of geometry and material
 scene.add(mesh); // Add component to scene
 
+// Camera - Second parameter: Aspect Ratio == size
+const sizes = {
+  width: 800,
+  height: 600,
+};
+
 // Camera
-const camera = new THREE.PerspectiveCamera(); // First parameter: Field of View on Vertical
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); // First parameter: Field of View on Vertical
+
 scene.add(camera); // Add Camera to Scene
+
+const canvas = document.querySelector('.webgl');
+
+// Render
+const render = new THREE.WebGLRenderer({
+  canvas: canvas,
+});
+
+render.setSize(sizes.width, sizes.height);
+
+render.render(scene, camera);
