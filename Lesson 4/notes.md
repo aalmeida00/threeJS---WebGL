@@ -12,3 +12,7 @@ Its a tool to output js/ts/sass to web-browser, runing a local server (in most o
 - Good Community
 - Well Maintained
 - Is a shit to configure
+
+# Resume
+
+Easy lesson, talking about webpack mostly. But its nice to work with Three JS and a bundler, using import because u can acess all the information using a alias on import. Its great to see how big the framework is.
